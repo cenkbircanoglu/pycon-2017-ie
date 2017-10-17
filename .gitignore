@@ -96,3 +96,5 @@ ENV/
 .ropeproject
 .DS_Store
 .idea
+*.csv
+*.json
