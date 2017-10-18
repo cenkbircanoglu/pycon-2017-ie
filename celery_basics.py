@@ -3,6 +3,7 @@ from collections import Counter
 from celery import Celery
 
 # Create Celery app
+from scipy.spatial.distance import cosine
 
 app = Celery("pycon", backend='rpc://', logging="info", broker='amqp://')
 app.conf.update(CELERY_ACCEPT_CONTENT=['pickle', 'json'])
@@ -41,3 +42,5 @@ def apply_counter(df):
     df = pickle.loads(df)
     logging.info(str(df.shape))
     return pickle.dumps(df.summary.apply(lambda x: Counter(str(x).split(" "))).values.sum())
+
+cosine
