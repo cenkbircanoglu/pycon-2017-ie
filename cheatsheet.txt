@@ -67,8 +67,8 @@
     pd.concat([df1, df2])
     
 
+    df.corr()
 
-                          Thanks!
 
-                      Any questions?
+    celery worker -A celery_basics -c 4 --loglevel=debug
 
