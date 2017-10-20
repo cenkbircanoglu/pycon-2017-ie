@@ -23,7 +23,7 @@ Also you are start to recommend video games with a simple but valid algorithms.
 At last you are going to run some Celery tasks and combine the usage of Celery to Pandas.
  
 
-###Before the session:
+### Before the session:
 
 #### Install Python / Make sure Python versions match 
 You need python installed in your laptop. Code is tested in Python 2.7.x, 3.5.x and 3.6.x versions. Choose whichever you want 
